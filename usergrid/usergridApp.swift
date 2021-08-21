@@ -11,7 +11,7 @@ import SwiftUI
 struct usergridApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView() // start view
         }
     }
 }

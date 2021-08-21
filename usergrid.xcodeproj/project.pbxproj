@@ -7,16 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6F4FC23E26CF4A140055900E /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4FC23D26CF4A140055900E /* UserModel.swift */; };
+		6F4FC24226CF4BC00055900E /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4FC24126CF4BC00055900E /* CardView.swift */; };
+		6F4FC24826CFDFA10055900E /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4FC24726CFDFA10055900E /* WebService.swift */; };
+		6F4FC25326D03A090055900E /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4FC25226D03A080055900E /* RemoteImage.swift */; };
 		6F59798F26CF04BD00F25209 /* usergridApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F59798E26CF04BD00F25209 /* usergridApp.swift */; };
-		6F59799126CF04BD00F25209 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F59799026CF04BD00F25209 /* ContentView.swift */; };
+		6F59799126CF04BD00F25209 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F59799026CF04BD00F25209 /* MainView.swift */; };
 		6F59799326CF04BF00F25209 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F59799226CF04BF00F25209 /* Assets.xcassets */; };
 		6F59799626CF04BF00F25209 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F59799526CF04BF00F25209 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F4FC23D26CF4A140055900E /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		6F4FC24126CF4BC00055900E /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		6F4FC24726CFDFA10055900E /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		6F4FC25226D03A080055900E /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
 		6F59798B26CF04BD00F25209 /* usergrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = usergrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F59798E26CF04BD00F25209 /* usergridApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usergridApp.swift; sourceTree = "<group>"; };
-		6F59799026CF04BD00F25209 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6F59799026CF04BD00F25209 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		6F59799226CF04BF00F25209 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F59799526CF04BF00F25209 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6F59799726CF04BF00F25209 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -33,6 +41,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F4FC23A26CF499A0055900E /* models */ = {
+			isa = PBXGroup;
+			children = (
+				6F4FC23D26CF4A140055900E /* UserModel.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		6F4FC23B26CF49A70055900E /* views */ = {
+			isa = PBXGroup;
+			children = (
+				6F59799026CF04BD00F25209 /* MainView.swift */,
+				6F4FC24126CF4BC00055900E /* CardView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		6F4FC24626CFDF780055900E /* services */ = {
+			isa = PBXGroup;
+			children = (
+				6F4FC24726CFDFA10055900E /* WebService.swift */,
+				6F4FC25226D03A080055900E /* RemoteImage.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
 		6F59798226CF04BD00F25209 = {
 			isa = PBXGroup;
 			children = (
@@ -53,7 +87,9 @@
 			isa = PBXGroup;
 			children = (
 				6F59798E26CF04BD00F25209 /* usergridApp.swift */,
-				6F59799026CF04BD00F25209 /* ContentView.swift */,
+				6F4FC23B26CF49A70055900E /* views */,
+				6F4FC23A26CF499A0055900E /* models */,
+				6F4FC24626CFDF780055900E /* services */,
 				6F59799226CF04BF00F25209 /* Assets.xcassets */,
 				6F59799726CF04BF00F25209 /* Info.plist */,
 				6F59799426CF04BF00F25209 /* Preview Content */,
@@ -85,6 +121,8 @@
 			dependencies = (
 			);
 			name = usergrid;
+			packageProductDependencies = (
+			);
 			productName = usergrid;
 			productReference = 6F59798B26CF04BD00F25209 /* usergrid.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +150,8 @@
 				Base,
 			);
 			mainGroup = 6F59798226CF04BD00F25209;
+			packageReferences = (
+			);
 			productRefGroup = 6F59798C26CF04BD00F25209 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +178,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F59799126CF04BD00F25209 /* ContentView.swift in Sources */,
+				6F4FC24826CFDFA10055900E /* WebService.swift in Sources */,
+				6F59799126CF04BD00F25209 /* MainView.swift in Sources */,
+				6F4FC25326D03A090055900E /* RemoteImage.swift in Sources */,
+				6F4FC23E26CF4A140055900E /* UserModel.swift in Sources */,
 				6F59798F26CF04BD00F25209 /* usergridApp.swift in Sources */,
+				6F4FC24226CF4BC00055900E /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
